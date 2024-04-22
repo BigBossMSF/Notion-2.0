@@ -14,7 +14,7 @@
 </head>
 <body>
     <aside>
-        <img src="{%static 'main/img/Msflogo2.svg'%}" alt="MSF">
+        <img src="{%static 'main/img/logo.png'%}" alt="MSF">
         <span class="logo">MSF</span>
 
         <div class="navigation"><h3>Мои заметки</h3></div>
@@ -24,16 +24,19 @@
 <!--            <a href="" style="text-decoration: none;"><li><i class="fa-solid fa-envelope"></i>  Контакты</li></a>-->
 <!--        </ul>-->
         <ul>
-            {% block content %}
             {% for note in notes %}
-            <li>
+            <li><a href="{% url 'note_detail' note.id %}">
                 <strong>{{ note.title }}</strong>
-            </li>
+            </a></li>
             {% endfor%}
-            {% endblock %}
         </ul>
+
+        <a href="{% url 'add_note'%}"><i class="fa-solid fa-plus"></i>Добавить заметку</a>
+
     </aside>
     <main>
+        {% block content %}
+        {% endblock %}
 
     </main>
 

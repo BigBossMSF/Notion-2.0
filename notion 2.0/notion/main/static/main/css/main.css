@@ -23,16 +23,22 @@ aside .logo{
 }
 
 aside h3 {
+    font_size: 10px;
     margin-top: 50px;
-    font_size: 28px;
+    float: right;
+    margin-right: 30px;
 }
 
-aside ul {list-style: none}
+
+
+aside ul {list-style: none;}
+
 aside ul li {
     color: #fff;
     display: block;
-    margin-top:20px;
+    margin-top:25px;
     transition: transform all, .4s ease;
+    font-size: 15px;
 }
 
 aside ul li:hover, aside ul a:hover{
@@ -49,7 +55,17 @@ main .features {
     width: 75%
 }
 
+
+
 main .features h1 {font-size: 50px;}
 main .features p {max-width: 400px; margin: 20px auto}
+
+main .notion h2 {
+    color: #fff;
+}
+
+main .notion p {
+    color: #fff;
+}
 
 

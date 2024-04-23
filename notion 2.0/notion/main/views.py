@@ -30,3 +30,8 @@ def note_detail(request, note_id):
     note = get_object_or_404(Notion, pk=note_id)
     notes = Notion.objects.all()  # Получаем все заметки
     return render(request, 'main/note_detail.html', {'note': note, 'notes': notes})
+
+def delete_note(request, note_id):
+    note = get_object_or_404(Notion, id=note_id)  # Получаем заметку, или 404
+    note.delete()  # Удаляем заметку
+    return redirect('home')  # Возвращаем пользователя на главную страницу, или куда тебе удобно

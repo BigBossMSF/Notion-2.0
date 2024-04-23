@@ -1,0 +1,115 @@
+body {
+    background: #28364f;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 17%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d
+}
+
+aside img {
+    width: 130px;
+    float: left;
+    margin-left: 45px;
+}
+
+aside .logoname{
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: +14px
+}
+
+aside h3 {
+    font_size: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+aside ul {list-style: none;}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top:25px;
+    transition: transform all, .4s ease;
+    font-size: 15px;
+}
+
+aside ul li a strong{
+    font-size: 20px;
+}
+
+
+aside ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #99c;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+aside .add_url{
+    text-align: center;
+    position: relative;
+    top: +15px;
+
+}
+
+aside .add_url a{
+    text-decoration: none;
+    color: #6083cc;
+
+}
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto}
+
+
+main .notion {
+    position: relative;
+    top: +50px;
+    margin-bottom: +50px;
+}
+
+
+
+
+main .notion h2 {
+    color: #fff;
+}
+
+main .notion p {
+    color: #fff;
+}
+
+main h1 {
+    color: #fff;
+}
+
+main form label{
+    color: #fff;
+}
+
+main .noting, main .notion{
+    text-align: center;
+}
+

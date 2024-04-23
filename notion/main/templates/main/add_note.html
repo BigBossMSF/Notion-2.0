@@ -1,0 +1,13 @@
+{% extends 'main/layout.html'%}
+
+{% block title%}Добавить заметку{% endblock %}
+{% block content%}
+    <div class="noting">
+        <h1>Добавить новую заметку</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+{% endblock %}

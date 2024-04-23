@@ -1,0 +1,10 @@
+{% extends 'main/layout.html'%}
+
+{% block title%}Заметка{% endblock %}
+
+{% block content%}
+        <div class="notion">
+                <h2>{{ note.title }}</h2>
+                <p>{{ note.text }}</p>
+        </div>
+{% endblock %}

@@ -15,7 +15,7 @@
 <body>
     <aside>
         <img src="{%static 'main/img/logo.png'%}" alt="MSF">
-        <span class="logo">MSF</span>
+        <span class="logoname">ОБЛАКО МЫСЛЕЙ</span>
 
         <div class="navigation"><h3>Мои заметки</h3></div>
 <!--        <ul>-->
@@ -26,12 +26,12 @@
         <ul>
             {% for note in notes %}
             <li><a href="{% url 'note_detail' note.id %}">
-                <strong>{{ note.title }}</strong>
-            </a></li>
+                <strong>{{ note.title }} </strong>
+            </a> <a href="{% url 'delete_note' note.id %}"><i class="fa-solid fa-xmark"></i></a></li>
             {% endfor%}
         </ul>
 
-        <a href="{% url 'add_note'%}"><i class="fa-solid fa-plus"></i>Добавить заметку</a>
+        <div  class="add_url"><a href="{% url 'add_note'%}"><i class="fa-solid fa-plus"></i> Добавить заметку</a></div>
 
     </aside>
     <main>
